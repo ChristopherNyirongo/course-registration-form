@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <form id="registrationForm" novalidate>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+    <span class="error" id="nameError"></span>
+
+    <label for="studentId">Student ID</label>
+    <input type="text" id="studentId" name="studentId" required
+       pattern="[0-9]{9}" title="Enter exactly 9 digits">
+    <span class="error" id="studentIdError"></span>
+
+    <label for="programme">Programme</label>
+    <select id="programme" name="programme" required>
+      <option value="">-- Select Programme --</option>
+      <option value="cs">Computer Science</option>
+      <option value="af">Accounting and Finance</option>
+      <option value="law">Law</option>
+    </select>
+    <span class="error" id="programmeError"></span>
+
+    <label for="course">Course</label>
+    <select id="course" name="course" required>
+      <option value="">-- Select Programme First --</option>
+    </select>
+    <span class="error" id="courseError"></span>
+
+    <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
